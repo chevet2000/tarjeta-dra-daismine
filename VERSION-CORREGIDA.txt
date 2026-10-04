@@ -5,3 +5,4 @@ Corrección 2 (v1.0.2): tailwind.config.ts sin el plugin tailwindcss-animate
                        (lo sustituye tw-animate-css, ya incluido)
 
 Verificación: package.json debe decir "version": "1.0.2"
+Redespliegue final
