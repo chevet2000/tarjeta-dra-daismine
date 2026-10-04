@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Dra. Daismine Pérez — Tarjeta Digital",
     images: [
       {
-        url: "/og-tarjeta.jpg",
+        url: "/og-tarjeta-v2.jpg",
         width: 1200,
         height: 630,
         alt: "Dra. Daismine Pérez — Médico General. Atención personalizada, a domicilio y online. Teléfonos: 0412-8322910 / 0412-8814227",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Dra. Daismine Pérez | Médico General a Domicilio y Online",
     description:
       "Atención médica personalizada, a domicilio y online. Tu mejor aliada. ¡Agenda tu cita!",
-    images: ["/og-tarjeta.jpg"],
+    images: ["/og-tarjeta-v2.jpg"],
   },
 };
 
