@@ -1,5 +1,7 @@
-VERSION 1.0.1 - CORREGIDA (package.json con dependencias validas)
-Fecha: 4-oct-2026
+VERSION 1.0.2 - CORREGIDA
+=========================
+Corrección 1 (v1.0.1): package.json y bun.lock con dependencias válidas
+Corrección 2 (v1.0.2): tailwind.config.ts sin el plugin tailwindcss-animate
+                       (lo sustituye tw-animate-css, ya incluido)
 
-Verificacion rapida: abre package.json y confirma que dice "version": "1.0.1"
-y que tiene solo 10 dependencias. Si lo ves asi, es el archivo correcto.
+Verificación: package.json debe decir "version": "1.0.2"
