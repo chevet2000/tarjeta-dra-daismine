@@ -20,11 +20,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  // En Vercel, VERCEL_URL se inyecta automáticamente (sin protocolo).
+  // En Vercel se usa SIEMPRE el dominio público de producción: las URLs
+  // internas de cada despliegue están protegidas por Vercel Authentication
+  // y WhatsApp no puede descargar la miniatura desde ahí.
   // Para dominio propio: definir NEXT_PUBLIC_SITE_URL = https://tudominio.com
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ??
-      (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000")
+      (process.env.VERCEL_ENV === "production"
+        ? "https://tarjeta-dra-daismine.vercel.app"
+        : process.env.VERCEL_URL
+          ? `https://${process.env.VERCEL_URL}`
+          : "http://localhost:3000")
   ),
   title: "Dra. Daismine Pérez | Médico General — Atención Médica a Domicilio",
   description:
