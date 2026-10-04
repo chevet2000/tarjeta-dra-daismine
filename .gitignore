@@ -1,0 +1,17 @@
+# dependencias
+node_modules/
+
+# builds
+.next/
+out/
+
+# despliegue
+.vercel/
+
+# entorno
+.env
+.env*.local
+
+# sistema / logs
+*.log
+.DS_Store
